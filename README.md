@@ -91,6 +91,7 @@ In `opencode.jsonc` (project root or global config):
 | `list_time_entries`   | List logged time entries for a month, grouped by project       |
 | `create_time_entries` | Bulk-create time entries for all workdays (Mon-Fri) in a month |
 | `create_single_entry` | Create a single time entry for a specific date                 |
+| `delete_time_entry`   | Delete a specific time entry by ID                             |
 | `verify_auth`         | Verify credentials without making changes (dry run)            |
 | `get_workdays`        | Calculate working days (Mon-Fri) for a given month             |
 
@@ -107,7 +108,7 @@ In `opencode.jsonc` (project root or global config):
 
 ```
 mcp/
-├── server.py           # FastMCP server entry point (6 tools)
+├── server.py           # FastMCP server entry point (7 tools)
 ├── float_client.py     # Async HTTP client with 4-step auth flow
 ├── models.py           # Pydantic domain models
 ├── config.py           # Environment variable configuration
